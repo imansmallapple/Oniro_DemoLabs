@@ -11,6 +11,18 @@
     {
       "name": "EntryAbility_label",
       "value": "label"
+    },
+    {
+      "name": "permission_microphone",
+      "value": ""
+    },
+    {
+      "name": "permission_reason_read_health_data",
+      "value": ""
+    },
+    {
+      "name": "permission_LOCATION",
+      "value": ""
     }
   ]
 }

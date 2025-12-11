@@ -1,0 +1,11 @@
+{
+  "name": "@ohos/shared_lib",
+  "version": "1.1.0",
+  "description": "HarmonyOS general utility library provides commonly used functions such as logging, file operations, image processing, permission management, storage, distributed KV store, and device management.",
+  "main": "Index.ets",
+  "author": "chens",
+  "license": "Apache-2.0",
+  "dependencies": {
+  },
+  "useNormalizedOHMUrl": true
+}

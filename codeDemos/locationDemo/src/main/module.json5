@@ -1,7 +1,7 @@
 {
   "module": {
-    "name": "entry",
-    "type": "entry",
+    "name": "locationDemo",
+    "type": "feature",
     "description": "$string:module_desc",
     "mainElement": "EntryAbility",
     "deviceTypes": [
@@ -11,10 +11,32 @@
     "deliveryWithInstall": true,
     "installationFree": false,
     "pages": "$profile:main_pages",
+    "requestPermissions": [
+      {
+        "name": "ohos.permission.APPROXIMATELY_LOCATION",
+        "reason": "$string:permission_reason_read_health_data",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "always"
+        }
+      },
+      {
+        "name": "ohos.permission.LOCATION",
+        "reason": "$string:permission_LOCATION",
+        "usedScene": {
+          "abilities": [
+            "EntryAbility"
+          ],
+          "when": "always"
+        }
+      },
+    ],
     "abilities": [
       {
         "name": "EntryAbility",
-        "srcEntry": "./ets/entryability/EntryAbility.ets",
+        "srcEntry": "./ets/applicationability/ApplicationAbility.ets",
         "description": "$string:EntryAbility_desc",
         "icon": "$media:layered_image",
         "label": "$string:EntryAbility_label",
@@ -36,7 +58,7 @@
     "extensionAbilities": [
       {
         "name": "EntryBackupAbility",
-        "srcEntry": "./ets/entrybackupability/EntryBackupAbility.ets",
+        "srcEntry": "./ets/applicationbackupability/ApplicationBackupAbility.ets",
         "type": "backup",
         "exported": false,
         "metadata": [
